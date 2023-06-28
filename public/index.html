@@ -452,16 +452,15 @@
    new Chart(ctu, {
       type: 'bar',
       data: {
-         labels: [],
+         labels: ['1', '2', '3', '4', '5'],
          datasets: [{
+            label: '',
+            data: [12, 10, 16, 22, 4, 25],
             backgroundColor: ["#44A6E9", "#FF8548", "#15CAB8", "#FEC600", "#036666",],
-            borderRadius: 6,
+            borderRadius: 12,
             options: {
                plugins: {
-                  title: {
-                     display: true,
-                     text: ''
-                  },
+                  
                },
                responsive: true,
                scales: {
