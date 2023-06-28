@@ -410,15 +410,13 @@
             data: [12, 19, 3, 5, 2, 3, 6],
             backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
             borderRadius: 6
-
          }]
       },
-      option: {
-         responsive : true,
-            showTooltips: true,
+      options: {
          tooltips: {
             enabled: true,
             backgroundColor: '#44A6E9',
+            titleFontSize:20,
             
          }
       }
@@ -499,6 +497,13 @@
             ],
             hoverOffset: 4
          }]
+      },
+      options:{
+         legend:{
+            display:true,
+            position:'bottom',
+         }
+
       }
    })
 
@@ -516,30 +521,36 @@
          datasets: [{
             label: 'New Revenue',
             data: [12, 19, 3, 5, 11, 3, 6],
-            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
-            borderRadius: 6
+            backgroundColor: ["green"],
          },
          {
             label: 'Orders',
             data: [19, 17, 8, 9, 3, 3, 6],
-            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
-            borderRadius: 6
-
+            backgroundColor: ["blue"],
          },
          {
             label: 'Refunds',
             data: [13, 11, 13, 15, 17, 8, 4],
-            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
-            borderRadius: 6
-
-         }
-
+            backgroundColor: ["orange"],
+         },
          ]
       },
-      option: {
+      options: {
          responsive:true,
          tooltips:{
             enabled:true
+         },
+         layout:{
+            padding:{
+               left:2,
+               right:1,
+               top:2,
+               bottom:2
+            }
+         },
+         legend:{
+            display:true,
+            position:'bottom',
          }
       }
 
