@@ -24,17 +24,7 @@
       <div class="grid md:grid-cols-17">
          <div>
 
-            <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
-               aria-controls="sidebar-multi-level-sidebar" type="button"
-               class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600">
-               <span class="sr-only">Open sidebar</span>
-               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path clip-rule="evenodd" fill-rule="evenodd"
-                     d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
-                  </path>
-               </svg>
-            </button>
+            
 
             <aside id="sidebar-multi-level-sidebar"
                class="top-0 left-0 z-40  p-4 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
@@ -137,45 +127,52 @@
          </div>
          <!-- main sidebar -->
          <div>
-            <div class="grid md:grid-cols-18 p-4">
-               <div>
-                  <div> <span class="font-bold">Dashboard</span></div>
-               </div>
-               <div class="grid md:grid-cols-13">
-                  <div class="flex">
-                     <div class="m1"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                     <div><a href=""><i class="fa-solid fa-bell"></i></a></div>
+            <div class="flex justify-between md:grid-cols-18 p-4">
+               <div class="flex">
+                  
+                  <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
+               aria-controls="sidebar-multi-level-sidebar" type="button"
+               class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600">
+               <span class="sr-only">Open sidebar</span>
+               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd" fill-rule="evenodd"
+                     d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                  </path>
+               </svg>
+            </button>
+            <div class="font-bold">Dashboard</div>
                   </div>
-                  <div class="flex">
-                     <div class="m1"><a href=""><i class="fa-solid fa-sun"></i></a></div>
+                  
+               <div class="flex">
+                  <div class="m1"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                  <div><a href=""><i class="fa-solid fa-bell"></i></a></div>
+                  <div class="m1"><a href=""><i class="fa-solid fa-sun"></i></a></div>
                      <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
-
-                  </div>
-
                   <div class="flex">
-                     <div class="m">
-                        <img class="border-1 rounded-xl " src="/Image-profile.png" alt="">
+                     <div class="mx">
+                        <img class="border-1 rounded-xl h30 " src="/Image-profile.png" alt="">
                      </div>
-                     <div class="font-medium t"><a href="">Gladys Kanyinda <span class="font-light">Admin</span></a>
+                     <div class="font-medium t"><a href="">Gladys Kanyinda <div class="font-light">Admin</div></a>
                      </div>
                   </div>
                </div>
             </div>
             <!--  -->
-            <div class="grid md:grid-cols-2 ">
+            <div class="grid grid-cols-2 md:grid-cols-2 ">
                <div class="m rounded-lg bg-white">
                   <div class="p-2">
                      <div class="font-semibold">Today Overview</div>
                      <div class="grid  md:grid-cols-20  text-white">
-                        <div class="grid  md:grid-cols-2 style g">
+                        <div class="grid grid-cols-2  md:grid-cols-2 style g">
                            <div class="style3">$450</div>
                            <div class="style2">EARNINGS</div>
                         </div>
-                        <div class="grid  md:grid-cols-2 style b">
+                        <div class="grid grid-cols-2  md:grid-cols-2 style b">
                            <div class="style5">40</div>
                            <div class="style7">ORDERS</div>
                         </div>
-                        <div class="grid  md:grid-cols-2 style o">
+                        <div class="grid grid-cols-2  md:grid-cols-2 style o">
                            <div class="style3">70</div>
                            <div class="style2">CUSTOMERS</div>
                         </div>
@@ -186,16 +183,16 @@
                <div class="m rounded-lg bg-white">
                   <div class="p-2">
                      <div class="font-semibold">Total Overview</div>
-                     <div class="grid   md:grid-cols-20 text-white">
-                        <div class="grid   md:grid-cols-2 style g">
+                     <div class="grid    md:grid-cols-20 text-white">
+                        <div class="grid grid-cols-2   md:grid-cols-2 style g">
                            <div class="style3">8,2K</div>
                            <div class="style2">EARNINGS</div>
                         </div>
-                        <div class="grid   md:grid-cols-2 style b">
+                        <div class="grid grid-cols-2   md:grid-cols-2 style b">
                            <div class="style5">99K</div>
                            <div class="style7">ORDERS</div>
                         </div>
-                        <div class="grid   md:grid-cols-2 style o">
+                        <div class="grid grid-cols-2   md:grid-cols-2 style o">
                            <div class="style3">1.3M</div>
                            <div class="style2">CUSTOMERS</div>
                         </div>
@@ -211,7 +208,7 @@
                         <div class="font-semibold">Profit</div>
                         <div>
                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                              class=" bg-smoke bg-blue-700 focus:ring-4 focus:outline-none b focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                              class=" bg-smoke bg-blue-700 focus:ring-4 focus:outline-none b focus:ring-blue-300 font-medium  text-sm px-4 py-2.5 text-center inline-flex items-center"
                               type="">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                                  stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -255,7 +252,7 @@
                      <div class="font-semibold">Audience Overview</div>
                      <div>
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                           class=" b bg-smoke bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           class=" b bg-smoke bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-4 py-2.5 text-center inline-flex items-center"
                            type="">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -281,17 +278,17 @@
                      </div>
                   </div>
 
-                  <canvas class="mychart1" id="myChart1" aria-label="chart" role="img"></canvas>
+                  <canvas class="width md:mychart1" id="myChart1" aria-label="chart" role="img"></canvas>
                </div>
             </div>
             <!--  -->
-            <div class="grid md:grid-cols-20">
+            <div class="grid grid-cols-111 md:grid-cols-20">
                <div class="bg-white style">
                   <div class="flex justify-between">
                      <div class="font-semibold">Feedback</div>
                      <div>
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                           class=" b bg-smoke bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           class=" b bg-smoke bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-4 py-2.5 text-center inline-flex items-center"
                            type="">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -316,14 +313,14 @@
                         </div>
                      </div>
                   </div>
-                  <canvas class="mychart2" id="myChart2" aria-label="chart" role="img"></canvas>
+                  <canvas class="width1 md:mychart2" id="myChart2" aria-label="chart" role="img"></canvas>
                </div>
                <div class="bg-white style">
                   <div class="flex justify-between">
                      <div class="font-semibold">Visits by Source</div>
                      <div>
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                           class=" b bg-smoke bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           class=" b bg-smoke bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-4 py-2.5 text-center inline-flex items-center"
                            type="">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -348,14 +345,14 @@
                         </div>
                      </div>
                   </div>
-                  <canvas class="mychart" id="myChart3" aria-label="chart" role="img"></canvas>
+                  <canvas class="width md:mychart" id="myChart3" aria-label="chart" role="img"></canvas>
                </div>
                <div class="bg-white style">
                   <div class="flex justify-between">
                      <div class="font-semibold">Total Transactions</div>
                      <div>
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                           class=" b bg-smoke focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           class=" b bg-smoke focus:ring-4 focus:outline-none  font-medium  text-sm px-4 py-2.5 text-center inline-flex items-center"
                            type="">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -380,7 +377,9 @@
                         </div>
                      </div>
                   </div>
-                  <canvas class="mychart" id="myChart4" aria-label="chart" role="img"></canvas>
+                  <div>
+                  <canvas class="width md:mychart" id="myChart4" aria-label="chart" role="img"></canvas>
+               </div>
                </div>
 
             </div>
@@ -396,11 +395,11 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-   const ctx = document.getElementById('myChart');
-   const ctz = document.getElementById('myChart1');
-   const cty = document.getElementById('myChart2');
-   const ctv = document.getElementById('myChart3');
-   const ctu = document.getElementById('myChart4');
+   const ctx = document.getElementById('myChart').getContext('2d');
+   const ctz = document.getElementById('myChart1').getContext('2d');
+   const cty = document.getElementById('myChart2').getContext('2d');
+   const ctv = document.getElementById('myChart3').getContext('2d');
+   const ctu = document.getElementById('myChart4').getContext('2d');
 
    new Chart(ctx, {
       type: 'bar',
