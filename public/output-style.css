@@ -124,6 +124,9 @@ abbr:where([title]) {
 .text-white {
   color: white;
 }
+.bg-smoke{
+  background-color: whitesmoke;
+}
 /*
 Remove the default font size and weight for headings.
 */
