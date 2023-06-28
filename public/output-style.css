@@ -75,6 +75,10 @@ canvas {
   height: 230px !important;
 }
 .mychart {
+  width: 360px !important;
+  height: 250px !important;
+}
+.mychart2 {
   width: 300px !important;
   height: 250px !important;
 }

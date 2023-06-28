@@ -11,9 +11,10 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
       integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
    <link href="/public/output-style.css" rel="stylesheet">
    <title>Convi</title>
 </head>
@@ -156,7 +157,8 @@
                      <div class="m">
                         <img class="border-1 rounded-xl " src="/Image-profile.png" alt="">
                      </div>
-                     <div class="font-medium t"><a href="">Gladys Kanyinda <span class="font-light">Admin</span></a></div>
+                     <div class="font-medium t"><a href="">Gladys Kanyinda <span class="font-light">Admin</span></a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -279,8 +281,8 @@
                         </div>
                      </div>
                   </div>
-                
-                  <canvas class="mychart1" id="myChart1" aria-label="chart"  role="img"></canvas>
+
+                  <canvas class="mychart1" id="myChart1" aria-label="chart" role="img"></canvas>
                </div>
             </div>
             <!--  -->
@@ -315,7 +317,7 @@
                         </div>
                      </div>
                   </div>
-                  <canvas class="mychart" id="myChart2" aria-label="chart" role="img"></canvas>
+                  <canvas class="mychart2" id="myChart2" aria-label="chart" role="img"></canvas>
                </div>
                <div class="bg-white style">
                   <div class="flex justify-between">
@@ -353,7 +355,7 @@
                   <div class="flex justify-between">
                      <div class="font-semibold">Total Transactions</div>
                      <div>
-                        <button  id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                            class=" b bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                            type="button">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -407,17 +409,17 @@
          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
          datasets: [{
             label: '',
-            data: [12, 19, 3, 5, 2, 3, 6],
+            data: [19, 15, 12, 20, 18, 24, 19,],
             backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
-            borderRadius: 6
+            borderRadius: 13
          }]
       },
       options: {
          tooltips: {
             enabled: true,
             backgroundColor: '#44A6E9',
-            titleFontSize:20,
-            
+            titleFontSize: 20,
+
          }
       }
 
@@ -429,9 +431,9 @@
          labels: ['Direct', 'Social', 'Email', 'Other', 'Referrals'],
          datasets: [{
             label: '',
-            data: [100, 300, 400, 600, 900],
+            data: [1200, 1600, 900, 600, 1000, 1990],
             backgroundColor: ["#44A6E9", "#FF8548", "#15CAB8", "#FEC600", "#036666",],
-            borderRadius: 6,
+            borderRadius: 13,
             options: {
                indexAxis: 'y',
                elements: {
@@ -447,30 +449,30 @@
 
 
 
-   new Chart(ctu,{
-      type:'bar',
-      data:{
-         labels:[],
-         datasets:[{
+   new Chart(ctu, {
+      type: 'bar',
+      data: {
+         labels: [],
+         datasets: [{
             backgroundColor: ["#44A6E9", "#FF8548", "#15CAB8", "#FEC600", "#036666",],
             borderRadius: 6,
             options: {
-    plugins: {
-      title: {
-        display: true,
-        text: ''
-      },
-    },
-    responsive: true,
-    scales: {
-      x: {
-        stacked: true,
-      },
-      y: {
-        stacked: true
-      }
-    }
-  }
+               plugins: {
+                  title: {
+                     display: true,
+                     text: ''
+                  },
+               },
+               responsive: true,
+               scales: {
+                  x: {
+                     stacked: true,
+                  },
+                  y: {
+                     stacked: true
+                  }
+               }
+            }
          }]
 
       }
@@ -498,11 +500,20 @@
             hoverOffset: 4
          }]
       },
-      options:{
-         legend:{
-            display:true,
-            position:'bottom',
-         }
+      options: {
+         legend: {
+            display: true,
+            position: 'bottom',
+            
+         },
+         layout: {
+            padding: {
+               left: 45,
+               right: 1,
+               top: 2,
+               bottom: 2
+            }
+         },
 
       }
    })
@@ -536,21 +547,21 @@
          ]
       },
       options: {
-         responsive:true,
-         tooltips:{
-            enabled:true
+         responsive: true,
+         tooltips: {
+            enabled: true
          },
-         layout:{
-            padding:{
-               left:2,
-               right:1,
-               top:2,
-               bottom:2
+         layout: {
+            padding: {
+               left: 2,
+               right: 1,
+               top: 2,
+               bottom: 2
             }
          },
-         legend:{
-            display:true,
-            position:'bottom',
+         legend: {
+            display: true,
+            position: 'bottom',
          }
       }
 
