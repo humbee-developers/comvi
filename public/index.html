@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
+      integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="/public/output-style.css" rel="stylesheet">
+   <title>Convi</title>
+</head>
+
+<body class="bg-creem">
+   <div>
+      <div class="grid md:grid-cols-17">
+         <div>
+
+            <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
+               aria-controls="sidebar-multi-level-sidebar" type="button"
+               class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600">
+               <span class="sr-only">Open sidebar</span>
+               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd" fill-rule="evenodd"
+                     d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                  </path>
+               </svg>
+            </button>
+
+            <aside id="sidebar-multi-level-sidebar"
+               class="top-0 left-0 z-40  p-4 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+               aria-label="Sidebar">
+               <div class="h-full px-3 py-4 overflow-y-auto rounded-xl text-white bg-green-1100 ">
+                  <div>
+                     <img class="mb-4 ml-4" src="/Logo.png" alt="">
+                  </div>
+                  <ul class="space-y-2 font-medium">
+                     <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  ">
+
+                           <span class="ml-3 text-white">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <button type="button"
+                           class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg group  "
+                           aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                           <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Products</span>
+                           <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd"
+                                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                 clip-rule="evenodd"></path>
+                           </svg>
+                        </button>
+                        <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                           <li>
+                              <a href="#"
+                                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group  ">Products
+                                 Page</a>
+                           </li>
+                           <li>
+                              <a href="#"
+                                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group   ">Create
+                                 Product</a>
+                           </li>
+                           <li>
+                              <a href="#"
+                                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group   ">Invoice</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button type="button"
+                           class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg group  "
+                           aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                           <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Orders</span>
+                           <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd"
+                                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                 clip-rule="evenodd"></path>
+                           </svg>
+                        </button>
+                        <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                           <li>
+                              <a href="#"
+                                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group  ">Products
+                                 Page</a>
+                           </li>
+                           <li>
+                              <a href="#"
+                                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group   ">Create
+                                 Product</a>
+                           </li>
+                           <li>
+                              <a href="#"
+                                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group   ">Invoice</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center p-2  rounded-lg   ">
+                           <span class="flex-1 ml-3 whitespace-nowrap">Sales</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center p-2  rounded-lg   ">
+                           <span class="flex-1 ml-3 whitespace-nowrap">Reviews</span>
+                        </a>
+                     </li>
+                     <hr>
+                     <li>
+                        <a href="#" class="flex items-center p-2  rounded-lg   ">
+                           <span class="flex-1 ml-3 whitespace-nowrap">Setting</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="flex items-center p-2  rounded-lg   ">
+                           <span class="flex-1 ml-3 whitespace-nowrap">Logout</span>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="mt-p">
+                     <img src="/Banner.png" alt="">
+                  </div>
+               </div>
+            </aside>
+         </div>
+         <!-- main sidebar -->
+         <div>
+            <div class="grid md:grid-cols-18 p-4">
+               <div>
+                  <div> <span class="font-bold">Dashboard</span></div>
+               </div>
+               <div class="grid md:grid-cols-13">
+                  <div class="flex">
+                     <div class="m1"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                     <div><a href=""><i class="fa-solid fa-bell"></i></a></div>
+                  </div>
+                  <div class="flex">
+                     <div class="m1"><a href=""><i class="fa-solid fa-sun"></i></a></div>
+                     <div><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+
+                  </div>
+
+                  <div class="flex">
+                     <div class="m">
+                        <img class="border-1 rounded-xl " src="/Image-profile.png" alt="">
+                     </div>
+                     <div class="font-medium t"><a href="">Gladys Kanyinda <span class="font-light">Admin</span></a></div>
+                  </div>
+               </div>
+            </div>
+            <!--  -->
+            <div class="grid md:grid-cols-2 ">
+               <div class="m rounded-lg bg-white">
+                  <div class="p-2">
+                     <div class="font-semibold">Today Overview</div>
+                     <div class="grid  md:grid-cols-20  text-white">
+                        <div class="grid  md:grid-cols-2 style g">
+                           <div class="style3">$450</div>
+                           <div class="style2">EARNINGS</div>
+                        </div>
+                        <div class="grid  md:grid-cols-2 style b">
+                           <div class="style5">40</div>
+                           <div class="style7">ORDERS</div>
+                        </div>
+                        <div class="grid  md:grid-cols-2 style o">
+                           <div class="style3">70</div>
+                           <div class="style2">CUSTOMERS</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--  -->
+               <div class="m rounded-lg bg-white">
+                  <div class="p-2">
+                     <div class="font-semibold">Total Overview</div>
+                     <div class="grid   md:grid-cols-20 text-white">
+                        <div class="grid   md:grid-cols-2 style g">
+                           <div class="style3">8,2K</div>
+                           <div class="style2">EARNINGS</div>
+                        </div>
+                        <div class="grid   md:grid-cols-2 style b">
+                           <div class="style5">99K</div>
+                           <div class="style7">ORDERS</div>
+                        </div>
+                        <div class="grid   md:grid-cols-2 style o">
+                           <div class="style3">1.3M</div>
+                           <div class="style2">CUSTOMERS</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--  -->
+            <div class="grid md:grid-cols-19 mt-4 ml-2">
+               <div class="bg-white style">
+                  <div class="">
+                     <div class="flex justify-between">
+                        <div class="font-semibold">Profit</div>
+                        <div>
+                           <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                              class=" bg-blue-700 focus:ring-4 focus:outline-none b focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                              type="button">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                                 stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                              </svg></button>
+                           <!-- Dropdown menu -->
+                           <div id="dropdown"
+                              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                              <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                                 <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Week</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Month</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Year</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex justify-between">
+                        <div class="font-bold">$18,345</div>
+                        <div class="style4">
+                           <div class="textg"><i class="fa-solid fa-arrow-trend-up"></i> +12% <span
+                                 class="text-black text-xs"> VC Yesterday</span></div>
+                        </div>
+
+                     </div>
+
+                     <canvas id="myChart" aria-label="chart" role="img"></canvas>
+
+                  </div>
+               </div>
+               <div class="bg-white style">
+                  <div class="flex justify-between">
+                     <div class="font-semibold">Audience Overview</div>
+                     <div>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                           class=" b bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           type="button">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                              </path>
+                           </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                           <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Week</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Month</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Year</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                
+                  <canvas class="mychart1" id="myChart1" aria-label="chart"  role="img"></canvas>
+               </div>
+            </div>
+            <!--  -->
+            <div class="grid md:grid-cols-20">
+               <div class="bg-white style">
+                  <div class="flex justify-between">
+                     <div class="font-semibold">Feedback</div>
+                     <div>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                           class=" b bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           type="button">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                              </path>
+                           </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                           <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Week</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Month</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Year</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <canvas class="mychart" id="myChart2" aria-label="chart" role="img"></canvas>
+               </div>
+               <div class="bg-white style">
+                  <div class="flex justify-between">
+                     <div class="font-semibold">Visits by Source</div>
+                     <div>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                           class=" b bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           type="button">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                              </path>
+                           </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                           <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Week</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Month</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Year</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <canvas class="mychart" id="myChart3" aria-label="chart" role="img"></canvas>
+               </div>
+               <div class="bg-white style">
+                  <div class="flex justify-between">
+                     <div class="font-semibold">Total Transactions</div>
+                     <div>
+                        <button  id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                           class=" b bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                           type="button">Week<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                              </path>
+                           </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                           <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Day</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Week</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Month</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Year</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <canvas class="mychart" id="myChart4" aria-label="chart" role="img"></canvas>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+</body>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+   const ctx = document.getElementById('myChart');
+   const ctz = document.getElementById('myChart1');
+   const cty = document.getElementById('myChart2');
+   const ctv = document.getElementById('myChart3');
+   const ctu = document.getElementById('myChart4');
+
+   new Chart(ctx, {
+      type: 'bar',
+      data: {
+         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+         datasets: [{
+            label: '',
+            data: [12, 19, 3, 5, 2, 3, 6],
+            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
+            borderRadius: 6
+
+         }]
+      },
+      option: {
+         responsive : true,
+            showTooltips: true,
+         tooltips: {
+            enabled: true,
+            backgroundColor: '#44A6E9',
+            
+         }
+      }
+
+   });
+
+   new Chart(ctv, {
+      type: 'bar',
+      data: {
+         labels: ['Direct', 'Social', 'Email', 'Other', 'Referrals'],
+         datasets: [{
+            label: '',
+            data: [100, 300, 400, 600, 900],
+            backgroundColor: ["#44A6E9", "#FF8548", "#15CAB8", "#FEC600", "#036666",],
+            borderRadius: 6,
+            options: {
+               indexAxis: 'y',
+               elements: {
+               },
+               responsive: true,
+               plugins: {
+
+               }
+            },
+         }]
+      }
+   })
+
+
+
+   new Chart(ctu,{
+      type:'bar',
+      data:{
+         labels:[],
+         datasets:[{
+            backgroundColor: ["#44A6E9", "#FF8548", "#15CAB8", "#FEC600", "#036666",],
+            borderRadius: 6,
+            options: {
+    plugins: {
+      title: {
+        display: true,
+        text: ''
+      },
+    },
+    responsive: true,
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true
+      }
+    }
+  }
+         }]
+
+      }
+   })
+
+
+
+   new Chart(cty, {
+
+      type: 'doughnut',
+      data: {
+         labels: [
+            'Positive',
+            'Negative',
+            'Neutral'
+         ],
+         datasets: [{
+            label: 'Data',
+            data: [60, 5, 35],
+            backgroundColor: [
+               '#15CAB8',
+               '#E2362F',
+               '#F2CB04'
+            ],
+            hoverOffset: 4
+         }]
+      }
+   })
+
+
+
+
+
+
+
+
+   new Chart(ctz, {
+      type: 'line',
+      data: {
+         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+         datasets: [{
+            label: 'New Revenue',
+            data: [12, 19, 3, 5, 11, 3, 6],
+            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
+            borderRadius: 6
+         },
+         {
+            label: 'Orders',
+            data: [19, 17, 8, 9, 3, 3, 6],
+            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
+            borderRadius: 6
+
+         },
+         {
+            label: 'Refunds',
+            data: [13, 11, 13, 15, 17, 8, 4],
+            backgroundColor: ["#44A6E9", "#44A6E9", "#44A6E9", "#15CAB8", "#44A6E9", "#44A6E9", "#44A6E9"],
+            borderRadius: 6
+
+         }
+
+         ]
+      },
+      option: {
+         responsive:true,
+         tooltips:{
+            enabled:true
+         }
+      }
+
+
+   });
+
+</script>
+
+</html>
