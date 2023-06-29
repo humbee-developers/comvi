@@ -923,16 +923,17 @@ video {
 .btn-style{
   background-color: #FEC600;
   padding: 7px 46px;
-  bottom: -10%;
+  bottom: 12%;
   font-weight: 600;
-  left: 44px;
+  left: 14px;
   border-radius: 6px;
 }
 .btm{
-  font-size: 25px;
+  font-size: 24px;
     font-weight: 600;
-    left: 37px;
-    bottom: 4%;
+    left: 15px;
+    bottom: 60%;
+
 }
 .bottom{
   top: 67%;
@@ -1184,18 +1185,19 @@ video {
     margin-top: 20px;
   }
   .md\:bottom{
-    top: 67%;
-    font-size: 24px;
-    left: 41px;
+    top: 5%;
+    font-size: 23px;
+    left: 21px;
     font-weight: 600;
   }
   .md\:btn-style2{
     background-color: #FEC600;
     padding: 7px 46px;
-    bottom: 6%;
+    bottom: 9%;
     font-weight: 600;
-    left: 44px;
+    left: 19px;
     border-radius: 6px;
+
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
