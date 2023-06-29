@@ -638,15 +638,20 @@ video {
 .ml-3 {
   margin-left: 0.75rem;
 }
-
+.w-18{
+  width: 18rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
 .mt-3 {
   margin-top: 3rem;
 }
+.mt-px{
+  margin-top: 133%;
+}
 .mt-p{
-  margin-top: 22%;
+  margin-top: 132%;
 }
 .flex {
   display: flex;
@@ -915,6 +920,26 @@ video {
 .text-black {
   color: black;
 }
+.btn-style{
+  background-color: #FEC600;
+  padding: 7px 46px;
+  bottom: -10%;
+  font-weight: 600;
+  left: 44px;
+  border-radius: 6px;
+}
+.btm{
+  font-size: 25px;
+    font-weight: 600;
+    left: 37px;
+    bottom: 4%;
+}
+.bottom{
+  top: 67%;
+  font-size: 24px;
+  left: 41px;
+  font-weight: 600;
+}
 .grid-cols-20 {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -1078,6 +1103,9 @@ video {
   .md\:block {
     display: block;
   }
+  .md\:w{
+    width: 16rem;
+  }
   .md\:p-3 {
     padding: 0.75rem /* 12px */;
   }
@@ -1105,6 +1133,9 @@ video {
   .md\:w-auto {
     width: auto;
   }
+  .md\:mt-px {
+    margin-top: 5%;
+}
   .md\:mb-2 {
     margin-bottom: 0.5rem /* 8px */;
   }
@@ -1151,6 +1182,20 @@ video {
   }
   .md\:ml20{
     margin-top: 20px;
+  }
+  .md\:bottom{
+    top: 67%;
+    font-size: 24px;
+    left: 41px;
+    font-weight: 600;
+  }
+  .md\:btn-style2{
+    background-color: #FEC600;
+    padding: 7px 46px;
+    bottom: 6%;
+    font-weight: 600;
+    left: 44px;
+    border-radius: 6px;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
